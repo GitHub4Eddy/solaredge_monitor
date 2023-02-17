@@ -11,12 +11,15 @@ The readings for lastyear and lifetime energy are automatically set to the right
 See API documentation on https://www.solaredge.com/sites/default/files/se_monitoring_api.pdf 
 
 
+Changes version 3.0 (17th February 2023)
+- Added translation for EN, FR and NL
+
+
 Changes version 2.1 (3rd April 2022)
 - Solved bug with child device lastDay showing incorrect values in energy panel
 
-
 Changes version 2.0 (26th Match 2022)
--All *meter device types can now be shown in the Yubii app so: 
+- All *meter device types can now be shown in the Yubii app so: 
    - Changed main device SolarEdge Monitor to device type com.fibaro.powerMeter
    - Changed child device solarPower to device type com.fibaro.powerMeter
    - Changed child devices lastDayData, lastMonthData, lastYearData and lifeTimeData to com.fibaro.energyMeter
@@ -67,7 +70,7 @@ Changes version 0.3 (12th April 2021)
 - Cleaned up the code
 
 Changes version 0.2 (12th April 2021)
-- Disabled revenue value (not for lifeTimeData)
+- Disabled revenue value (except for lifeTimeData)
 
 Changes version 0.1 (11th April 2021)
 - First (test) version
@@ -78,6 +81,7 @@ Variables (mandatory and created automatically):
 - apiKey = API key of your SolarEdge Inverter (contact your installer if you don't have one)
 - systemUnits = SystemUnits is Metrics (kg) or Imperial (Lb) (default is Metrics)
 - solarM2 = The amount of m2 Solar Panels (use . for decimals) for calculating Solar Power m2 (default = 0)
+- language = Preferred language (default = English (en)) (supported languages is Dutch (nl) and French (fr))
 - interval = The daily API limitation is 300 requests. The default request interval is 360 seconds (6 minutes)
 - pause = Should the SolardEdge go in pause mode after sunset (default = true)
 - debugLevel = Number (1=some, 2=few, 3=all, 4=simulation mode) (default = 1)

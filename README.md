@@ -8,6 +8,7 @@ The Environmental Benefits are updated once a day after 12:00 hour
 The settings for Peak Power and Currency are retrieved from the inverter 
 The rateType interface of Child device Last Day is automatically set to "production" and values from this child devices can be used for the Energy Panel 
 The readings for lastyear and lifetime energy are automatically set to the right Wh unit (Wh, kWh, MWh or GWh) 
+
 See API documentation on https://www.solaredge.com/sites/default/files/se_monitoring_api.pdf 
 
 
